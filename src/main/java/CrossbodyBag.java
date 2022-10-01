@@ -56,7 +56,7 @@ public class CrossbodyBag extends Bag{
     @Override
     public String toString() {
         String bagString = super.toString();
-        String s = " Crossbody Bag with "+ this.numberOfStraps + " straps (";
+        String s = "Crossbody Bag with "+ this.numberOfStraps + " straps";
         for(int i = 0; i < bagString.length()-2; i++){
             if(bagString.substring(i,i+3).equals("Bag")){
                 s = bagString.substring(0,i) + s + bagString.substring(i+3);
