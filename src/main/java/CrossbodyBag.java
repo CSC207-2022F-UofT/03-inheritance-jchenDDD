@@ -48,6 +48,7 @@ public class CrossbodyBag extends Bag{
         return this.numberOfStraps;
     }
 
+    @Override
     public void enhance() {
         super.increaseCapacity(2);
     }
@@ -57,8 +58,8 @@ public class CrossbodyBag extends Bag{
         String bagString = super.toString();
         String s = " Crossbody Bag with "+ this.numberOfStraps + " straps (";
         for(int i = 0; i < bagString.length()-2; i++){
-            if(bagString.substring(i,i+3).equals("bag")){
-                s = bagString.substring(0,i) + s + bagString.substring(i+3, bagString.length());
+            if(bagString.substring(i,i+3).equals("Bag")){
+                s = bagString.substring(0,i) + s + bagString.substring(i+3);
             }
         }
         return s;
